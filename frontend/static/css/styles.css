@@ -1,0 +1,130 @@
+/* Layout */
+body, html {
+    height: 100%;
+}
+.sidebar {
+    min-width: 260px;
+    max-width: 320px;
+    min-height: 100vh;
+}
+@media (max-width: 767px) {
+    .sidebar {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+}
+
+/* Sidebar */
+.sidebar h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #007bff;
+}
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    color: #343a40;
+    transition: background 0.2s;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:focus {
+    background: #e9ecef;
+    color: #007bff;
+    font-weight: 600;
+}
+.sidebar .nav-link i {
+    margin-right: 0.5rem;
+}
+
+/* Main Content */
+main {
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+.details-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 2rem;
+    min-height: 350px;
+}
+@media (max-width: 767px) {
+    .details-card {
+        padding: 1rem;
+    }
+}
+
+/* Search & Results */
+.form-label {
+    font-weight: 600;
+}
+#results, #brainResults {
+    margin-top: 0.5rem;
+    min-height: 120px;
+}
+.list-group-item, .btn-outline-primary {
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.list-group-item:hover, .btn-outline-primary:hover {
+    background: #e9ecef;
+    color: #007bff;
+}
+
+/* Details Section */
+.details-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+}
+.details-card .nav-tabs {
+    margin-bottom: 1.5rem;
+}
+.details-card .tab-content {
+    min-height: 180px;
+}
+.details-card .list-group-item {
+    border: none;
+    background: transparent;
+    padding-left: 0;
+}
+
+/* Hierarchy Tree */
+.brain-hierarchy {
+    margin-top: 1.5rem;
+}
+.hierarchy-tree {
+    padding-left: 0;
+}
+.hierarchy-tree ul {
+    padding-left: 20px;
+}
+.hierarchy-tree li {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-left: 2px solid #007bff;
+}
+.hierarchy-tree strong {
+    color: #007bff;
+    font-weight: bold;
+}
+.hierarchy-tree a {
+    color: #212529;
+    text-decoration: none;
+}
+.hierarchy-tree a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Accessibility */
+button:focus,
+input:focus,
+select:focus {
+    outline: 2px solid #80bdff;
+    outline-offset: 2px;
+}
